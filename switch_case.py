@@ -9,9 +9,9 @@
 #value you want to run thru switch case
 x = "phrase"
 
-case = switch(x)
+case = switch(x) 
 while True:
-    if  case == "one":
+    if  case  == "one":
         print("yes it's one")
         break;
     elif case == "wilson":
@@ -23,7 +23,8 @@ while True:
     elif case == "phrase":
         print ("testing")
         break;
-    else: #default:
+#default:
+    else:
         print('none ')
         break;
 #end switch
