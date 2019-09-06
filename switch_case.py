@@ -23,12 +23,12 @@ while True:
     elif case == "phrase":
         print ("testing")
         break;
-    else: #default
+    else: #default:
         print('none ')
         break;
 #end switch
 
-    
+
 
  def switch(x):
     return x;
