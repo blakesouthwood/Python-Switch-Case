@@ -5,11 +5,15 @@
 # then bland if elif else
 # it looks nice especially in Atom and Sublime
 
+# it's also legal and possible to use continue instead of a break
+# and change the case value after the triggered case value but
+# before and above using a continue do this: case = "newvalue"
+
 
 #value you want to run thru switch case
 x = "phrase"
 
-case = switch(x) 
+case = switch(x)
 while True:
     if  case  == "one":
         print("yes it's one")
