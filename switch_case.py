@@ -39,4 +39,4 @@ while True:
 
 
  def switch(x):
-    return x.lower(); #converts string to lowercase
+    return x.lower() #converts string to lowercase
