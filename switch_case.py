@@ -20,20 +20,20 @@ case = switch(x)
 while True:
     if  case  == "one":
         print("yes it's one")
-        break;
+        break
     elif case == "wilson":
         print ("we have a wilson winner")
-        break;
+        break
     elif case == "rudolph":
         print ("go reindeer")
-        break;
+        break
     elif case == "phrase":
         print ("testing")
-        break;
+        break
 #default:
     else:
         print('none ')
-        break;
+        break
 #end switch
 
 
