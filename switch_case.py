@@ -9,8 +9,11 @@
 # and change the case value after the triggered case value but
 # before and above using a continue do this: case = "newvalue"
 
-
+#################################
+##     S W I T C H   C A S E    #
+#################################
 #value you want to run thru switch case
+
 x = "phrase"
 
 case = switch(x)
@@ -36,4 +39,4 @@ while True:
 
 
  def switch(x):
-    return x;
+    return x.lower(); #converts string to lowercase
