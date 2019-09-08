@@ -12,17 +12,18 @@
 #################################
 ##     S W I T C H   C A S E    #
 #################################
+
+
 #value you want to run thru switch case
+x = "word"
 
-x = "phrase"
-
-case = switch(x)
+switch(x)
 while True:
     if  case  == "one":
         print("yes it's one")
         break
-    elif case == "wilson":
-        print ("we have a wilson winner")
+    elif case == "word":
+        print ("we have a word")
         break
     elif case == "rudolph":
         print ("go reindeer")
@@ -39,4 +40,6 @@ while True:
 
 
 def switch(x):
-    return x.lower() #converts string to lowercase
+    global case
+    case = x.lower()
+    #converts string to lowercase
