@@ -10,11 +10,10 @@
 # before and above using a continue do this: case = "newvalue"
 
 #################################
-##     S W I T C H   C A S E    #
+##     S W I T C H   C A S E   ##
 #################################
 
-
-#value you want to run thru switch case
+# value you want to run thru switch case
 x = "word"
 
 switch(x)
@@ -31,9 +30,15 @@ while True:
     elif case == "phrase":
         print ("testing")
         break
+    elif case == "google":
+        print ("coding")
+        break
+    elif case == "facebook":
+        print ("gui design")
+        break
 #default:
     else:
-        print('none ')
+        print('none')
         break
 #end switch
 
@@ -42,4 +47,4 @@ while True:
 def switch(x):
     global case
     case = x.lower()
-    #converts string to lowercase
+    # converts string to lowercase
