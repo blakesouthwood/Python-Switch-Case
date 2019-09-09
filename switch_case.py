@@ -8,6 +8,8 @@
 # it's also legal and possible to use continue instead of a break
 # and change the case value after the triggered case value but
 # before and above using a continue do this: case = "newvalue"
+# just added fallthru(). if you use fallthru() don't use break in that case
+
 
 #################################
 ##     S W I T C H   C A S E   ##
@@ -21,21 +23,27 @@ while True:
     if  case  == "one":
         print("yes it's one")
         break
+
     elif case == "word":
         print ("we have a word")
-        break
+        fallthru("rudolph")
+
     elif case == "rudolph":
         print ("go reindeer")
         break
+
     elif case == "phrase":
         print ("testing")
         break
+
     elif case == "google":
         print ("coding")
         break
+
     elif case == "facebook":
         print ("gui design")
         break
+
 #default:
     else:
         print('none')
@@ -48,3 +56,7 @@ def switch(x):
     global case
     case = x.lower()
     # converts string to lowercase
+
+
+def fallthru(y):
+    eval("switch('" + y + "')")
