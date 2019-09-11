@@ -50,7 +50,7 @@ def testfunction(x):
             break
 
         elif case  == "word":
-            print ("switch case behaivor works in Python now!")
+            print ("switch case behavior works in Python now!")
             fallthru("rudolph")   #<<===== fallthru() method is here no break
 
         elif case  == "rudolph":
