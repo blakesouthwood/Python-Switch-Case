@@ -17,7 +17,7 @@
 
 # currently working on def fallthru_until("name"):
 # so that it will be possible to fallthru a set of sequential cases
-# from the current point down to and including the last name in the set
+# from the current case down to and including the last case name in the set
 # noted by fallthru_until("name")
 
 
@@ -51,8 +51,8 @@ def testfunction(x):
 
 # ========  switch case code =====================
     switch(x)                    #<<====== switch() method is here
-    while True:                  #<<====== infinite loop to use breaks
 
+    while True:                  #<<====== infinite loop to use breaks
         if   case  == "one":
             print("yes it's one")
             break
