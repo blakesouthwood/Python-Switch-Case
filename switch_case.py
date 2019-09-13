@@ -12,6 +12,14 @@
 # just added fallthru() Sept 9th, 2019. if you use fallthru() don't use break in that case
 # if you forget to use a  "break" you will get an infinite loop
 # unless you use a fallthru which doesn't need a break after it
+# at this point you can only use one fallthru inside of a case
+# remember that when using fallthru you can't have a break after it
+
+# currently working on def fallthru_until("name"):
+# so that it will be possible to fallthru a set of sequential cases
+# from the current point down to and including the last name in the set
+# noted by fallthru_until("name")
+
 
 #################################
 ##     S W I T C H   C A S E   ##
