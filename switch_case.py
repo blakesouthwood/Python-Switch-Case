@@ -35,6 +35,7 @@
 global x
 x = "word"
 
+# =======  main  =============================
 def main():
     testfunction(x)
 
@@ -45,12 +46,12 @@ def switch(x):
     case = x.lower()  # converts string to lowercase
 
 
-# =======  fallthru =============================
+# =======   fallthru       =============================
 def fallthru(y):
     eval("switch('" + y + "')")
 
 
-
+# =======   testfunction    =============================
 def testfunction(x):
     print('test function testing switch case behavior')
 
