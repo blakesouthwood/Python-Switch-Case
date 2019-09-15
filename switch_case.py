@@ -20,6 +20,11 @@
 # from the current case down to and including the last case name in the set
 # noted by fallthru_until("name")
 
+# thinking I will put the data in a dictionary with the case value
+# and that way they will correspond and it's information use
+#
+# just added elif case in ['google', 'fishfood', 'probability']:  #so large list is doable
+# can also be done case == "google" or case == "fishfood": but above line is cleaner
 
 #################################
 ##     S W I T C H   C A S E   ##
@@ -69,8 +74,8 @@ def testfunction(x):
             print ("testing")
             break
 
-        elif case  == "google":
-            print ("coding")
+        elif case in ['google', 'fishfood', 'probability']: #<<==== several cases in list
+            print ("coding", case)
             break
 
         elif case  == "facebook":
@@ -85,7 +90,7 @@ def testfunction(x):
 #end switch
 
 
-# ====   end of switch case  ====================
+# ====   end of switch case  ====================bility']:
 
 
 if __name__ == "__main__":
