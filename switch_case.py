@@ -35,27 +35,27 @@
 global x
 x = "word"
 
-# =======  main  =============================
+# =======  main  ===================================
 def main():
     testfunction(x)
 
 
-# =======  switch  =============================
+# =======  switch  =================================
 def switch(x):
     global case
     case = x.lower()  # converts string to lowercase
 
 
-# =======   fallthru       =============================
+# =======   fallthru       =========================
 def fallthru(y):
     eval("switch('" + y + "')")
 
 
-# =======   testfunction    =============================
+# =======   testfunction    ========================
 def testfunction(x):
     print('test function testing switch case behavior')
 
-# ========  switch case code =====================
+# ========  switch case code =======================
     switch(x)                    #<<====== switch() method is here
 
     while True:                  #<<====== infinite loop to use breaks
@@ -75,7 +75,11 @@ def testfunction(x):
             print ("testing")
             break
 
-        elif case in ['google', 'fishfood', 'probability']: #<<==== several cases in list
+         # comparable to  case "google":
+         #                case "fishfood":
+         #                case "probability":
+
+        elif case in ['google', 'fishfood', 'probability']: #<<==== several cases in list on one line
             print ("coding", case)
             break
 
@@ -91,8 +95,8 @@ def testfunction(x):
 #end switch
 
 
-# ====   end of switch case  ====================bility']:
-
+# ====   end of switch case  ======================
+#        end testfunction  
 
 if __name__ == "__main__":
     main()
