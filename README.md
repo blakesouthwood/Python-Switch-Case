@@ -6,11 +6,11 @@ I live for switch case so I wanted one in Python.
 As Paul Graham says in his Lisp book to write code in a programming language
 we have to think in the programming language. I totally agree.
 
-Each programming language has a completley different philosophy for its
-design and rules and syntax and is strongly influenced by the thinking
+Each programming language has a completely different design philosophy and
+unique rules and syntax, and is strongly influenced by the thinking
 of the language designer and the languages that it's evolved and morphed from.
 
-That being said I'm accustomed to using switch case frequently and the design
+I'm accustomed to using switch case frequently and the design
 that I made for switch case is strongly influenced from C and JavaScript but
 is bound within the philosophy of a Pythonic look in feel so it's clean and
 fast to write. 
