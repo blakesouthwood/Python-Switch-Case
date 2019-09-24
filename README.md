@@ -21,7 +21,7 @@ no blunders and no bugs that result from using the switch case design. And
 the main purpose was to make the switch case reflect the Pythonic look and
 feel of cleanness and elegance to live up to the expectations of Guido van Rossum
 even though he did a deep <a href=https://www.python.org/dev/peps/pep-3103/> analysis</a> with inputs on whether to add a switch case
-to Python though he ultimately decided that if, elif, else was sufficient. So 
+to Python though he ultimately decided that if, elif, else were sufficient. So 
 though ifs alone work I used his philosophy of design retaining if, elif, else.
 
 The switch case has "switch", "case", "break", "fallthru" but most importantly
