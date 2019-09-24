@@ -12,7 +12,7 @@ of the language designer and the languages that it's evolved and morphed from.
 
 I'm accustomed to using switch case frequently and the design
 that I made for switch case is strongly influenced from C and JavaScript but
-is bound within the philosophy of a Pythonic look in feel so it's clean and
+is bound within the philosophy of a Pythonic look and feel so it's clean and
 fast to write. 
 
 My guiding light was the importance of creating the identical behavior
