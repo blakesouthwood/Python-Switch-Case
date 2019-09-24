@@ -27,5 +27,5 @@ though ifs alone work I used his philosophy of design retaining if, elif, else.
 The switch case has "switch", "case", "break", "fallthru" but most importantly
 behaves exactly how a "real" switch case does in other languages including
 JavaScript, C, C++. Most importantly it does retain use of ==  for matching rather than
-using a case("word") look which I considered initially.
+using a case("word") look which I considered initially; though I may add that option soon.
 
