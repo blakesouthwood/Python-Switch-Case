@@ -19,7 +19,7 @@ My guiding light was the importance of creating the identical behavior
 that is expected of a user that is familiar with switch cases so there are
 no blunders and no bugs that result from using the switch case design. And
 the main purpose was to make the switch case reflect the Pythonic look and
-feel of cleanness and elegance to live up to the expectation of Guido van Rossum
+feel of cleanness and elegance to live up to the expectations of Guido van Rossum
 even though he did a deep analysis with inputs on whether to add a switch case
 to Python though he ultimately decided that if, elif, else was sufficient. So 
 though ifs alone work I used his philosophy of design retaining if, elif, else.
