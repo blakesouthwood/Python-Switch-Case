@@ -1,5 +1,5 @@
 # Blake Southwood Software Engineer
-# Sept 5, 2019 Silicon Valley
+# Sept 29, 2019 Silicon Valley (updated)
 # Tested with PyDev on Eclipse on Macbook pro
 #C and C++ and JavaScript have switch case
 # and now Python has it(sort of) easier on the eyes
@@ -31,6 +31,13 @@
 # just added elif case in ['google', 'fishfood', 'probability']:  #so large list is doable
 # can also be done case == "google" or case == "fishfood": but above line is cleaner
 
+# the switch case evolved and morphed and I just added fallthru() and multiple cases on one line
+# I first wrote the switch method and then used case for the var since it's expressive and looks clean
+# and I started with a while True: and changed it to a single pass loop. The loop is so breaks can be used.
+# fallthru() was added after studying Swift and JavaScript switch case on Mozilla.
+# The multiple cases idea came from if var in list from stack overflow.
+# so in theory a listname could be used >>  elif case in mylist: (but then you can't see the contents of the list)
+
 #################################
 ##     S W I T C H   C A S E   ##
 #################################
@@ -38,7 +45,8 @@
 # value you want to run thru switch case
 
 global x
-x = "word"
+x = "word"                             #<<=== x must be a string just as matching case == "string", 
+                                       #<<=== if using a numbers put it in quotes example: "22"
 
 # =======  main  ===================================
 def main():
@@ -56,23 +64,27 @@ def fallthru(y):
     eval("switch('" + y + "')")
 
 
+
+
+#=====  SWITCH CASE CODE  demonstration is inside function testfunction(x) below =========
+
 # =======   testfunction    ========================
 def testfunction(x):
     print('test function testing switch case behavior')
 
 # ========  switch case code =======================
-    switch(x)                    #<<====== switch() method is here
+    switch(x)                           #<<====== switch() method is here
 
-    for i in range(1):                  #<==== loop once to use breaks
+    for i in range(1):                  #<==== loop once to allow using breaks
         if   case  == "one":
             print("yes it's one")
             break
 
         elif case  == "word":
             print ("switch case behavior works in Python now!")
-            fallthru("rudolph")   #<<===== fallthru() method is here don't use break
-
-        elif case  == "rudolph":
+            fallthru("rudolph")         #<<===== fallthru() method is here *don't use* break with fallthru()
+                                        #<<===== currently it requires the next case match in quotes 
+        elif case  == "rudolph":        #<<===== but later I will make it work using just fallthru()
             print ("go reindeer")
             break
 
@@ -81,7 +93,7 @@ def testfunction(x):
             break
 
         elif case in ['google', 'fishfood', 'probability']:   #<<==== several cases in list on one line
-            print ("coding", case)
+            print ("coding", case)                            #<<==== I just put case here to show which word matched
             break
 
         elif case  == "facebook":
