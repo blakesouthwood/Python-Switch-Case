@@ -46,8 +46,8 @@
 
 global x
 x = "word"                             #<<=== x must be a string just as matching case == "string", 
-                                       #<<=== if using a numbers put it in quotes example: "22"
-
+                                       #<<=== if using a number it will be converted to a string
+                                       #<<=== so x = 22   will work and be converted to "22"
 # =======  main  ===================================
 def main():
     testfunction(x)
@@ -55,8 +55,10 @@ def main():
 
 # =======  switch  =================================
 def switch(x):
+    if type(x) != str:  #checks to make sure it's a string if for example a number is passed as x
+        x = str(x)
     global case
-    case = x.lower()  # converts string to lowercase
+    case = x.lower() 
 
 
 # =======   fallthru       =========================
