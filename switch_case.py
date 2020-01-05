@@ -1,5 +1,6 @@
 # Blake Southwood Software Engineer
 # Sept 29, 2019 Silicon Valley (updated)
+# updated January  4, 2020 to fix bug so fallthru() works properly
 # Tested with PyDev on Eclipse on Macbook pro
 #C and C++ and JavaScript have switch case
 # and now Python has it(sort of) easier on the eyes
@@ -45,7 +46,7 @@
 # value you want to run thru switch case
 
 global x
-x = "word"                             #<<=== x must be a string just as matching case == "string", 
+x = "google"                             #<<=== x must be a string just as matching case == "string", 
                                        #<<=== if using a number it will be converted to a string
                                        #<<=== so x = 22   will work and be converted to "22"
 # =======  main  ===================================
@@ -77,7 +78,7 @@ def testfunction(x):
 # ========  switch case code =======================
     switch(x)                           #<<====== switch() method is here
 
-    for i in range(1):                  #<==== loop once to allow using breaks
+    while True:                  #<==== infinite loop used for fall thru method
         if   case  == "one":
             print("yes it's one")
             break
@@ -91,14 +92,14 @@ def testfunction(x):
             break
 
         elif case  == "phrase":
-            print ("testing")
+            print ("testing wow works on Sublime now Coooool...")
             break
 
         elif case in ['google', 'fishfood', 'probability']:   #<<==== several cases in list on one line
-            print ("coding", case)                            #<<==== I just put case here to show which word matched
+            print ("coding")                            #<<==== I just put case here to show which word matched
             break
 
-        elif case  == "facebook":
+        elif case  == "22":
             print ("gui design")
             break
 
