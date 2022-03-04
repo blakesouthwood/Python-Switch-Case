@@ -1,12 +1,71 @@
-<html>
 
-<body bgcolor= yellow>
+feedinput(7)
 
-testing
-<br>
-<br>
-<b>sample for showing off <font color=red>switch case</font> example</b>
-<br><br>
-
-</body>
-</html>
+z='''
+	exp= '7';
+	exp='orange';
+	exp='yellow';
+	
+	switch(exp){
+		case 1 thru 6:
+			print("===mocha brew morning=====!")
+			print('a walk in the park')
+			print('listening to neo music ')
+			break
+		
+		case 7 thru 10: 
+			print("---second series case here ---") #this is being caught off
+			print("= 7 - 10 ======this is  7  t h r u  10ish ==========!")
+			print('cold tennis victory is mine')
+			print('who will win? -----')
+			fallthru
+			
+			switch(exp){
+				case 'red':
+					print("this is red we are inside of the nested sw i tch now I did it ")
+					print("3 billion of them .go baby go make it happen..")
+					fallthru
+				case 'blue':
+					print("----------blue------------- ")
+					print("----blue ----..")
+					break
+				case 'orange':
+					print("=====ORANGE AID TANG======== ")
+					print("========orange orang orange======.")
+					break
+				default:
+					print('this is default this was missing')
+					print(' darn it')
+			endswitch
+			
+			switch(exp){
+				case 'green':
+					print("green fireballs in ww2 ")
+					print("gren aliesns green ")
+					break
+					
+				case 'purple':
+					print('more purple here ===')
+					print("----------purple--------  ====")
+					print("---- purple-------..")
+					break
+					
+				case 'yellow':
+					print('more yellow here ===')
+					print("-----yellow--------  ====")
+					print("---- yellow-------..")
+					break
+					
+				default:
+					print('this is lower def ault this was missing')
+					print(' darn it')
+			endswitch
+			break
+		default:
+			print('no matches so sorry about that ')
+			print(' ')
+			
+}
+'''	
+the_endswitch(z)
+  
