@@ -16,5 +16,10 @@ Don Knuth's Literate Programming paper.
 Working on a quick and dirty prototype now in my spare time
 when I'm not studying for my tests to get into teaching.
 
+Moving forward I will use copilot for my future projects.
+I just read that copilot added a chat mode and it can
+refactor and help debug code so I plan to use it now.
+
+
 Blake Southwood
 
